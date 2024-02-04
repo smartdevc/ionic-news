@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NewsService } from '../services/news.service';
 
 @Component({
   selector: 'app-tabs',
@@ -7,6 +8,11 @@ import { Component } from '@angular/core';
 })
 export class TabsPage {
 
-  constructor() {}
+  constructor(private newsService: NewsService) {}
+
+
+  ngOnInit(){
+    this.newsService.getTopHeadLines();
+  }
 
 }
