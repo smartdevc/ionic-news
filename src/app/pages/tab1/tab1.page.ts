@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Article } from '../interfaces';
-import { NewsService } from '../services/news.service';
+import { Article } from '../../interfaces';
+import { NewsService } from '../../services/news.service';
 
 @Component({
   selector: 'app-tab1',
@@ -12,6 +12,7 @@ export class Tab1Page {
   constructor(private newsService: NewsService) { }
 
   articles: Article[] = [];
+  article !: Article; 
 
   ngOnInit() {
     this.newsService.getTopHeadLines()
@@ -22,6 +23,11 @@ export class Tab1Page {
       }
       )
 
+  }
+
+  onClick( item:Article ){    
+    this.article=item;
+    console.log('this.article', this.article);
   }
 
 }

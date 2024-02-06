@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { NewsService } from '../services/news.service';
-import { Article } from '../interfaces';
+import { NewsService } from '../../services/news.service';
+import { Article } from '../../interfaces';
 
 @Component({
   selector: 'app-tabs',
