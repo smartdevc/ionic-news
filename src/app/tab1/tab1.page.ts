@@ -17,7 +17,7 @@ export class Tab1Page {
     this.newsService.getTopHeadLines()
       .subscribe((resp) => {
         this.articles = resp,
-          this.articles = this.articles.slice(0, 10);
+          this.articles = this.articles.slice(0, 25);
         console.log('this.articles', this.articles);
       }
       )
