@@ -25,9 +25,9 @@ export class Tab1Page {
 
   }
 
-  onClick( item:Article ){    
-    this.article=item;
-    console.log('this.article', this.article);
-  }
+  // onClick( item:Article ){    
+  //   this.article=item;
+  //   console.log('this.article', this.article);
+  // }
 
 }

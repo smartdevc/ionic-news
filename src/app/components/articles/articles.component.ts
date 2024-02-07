@@ -1,4 +1,5 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, Input, OnInit, ViewChild } from '@angular/core';
+import { Article } from 'src/app/interfaces';
 
 @Component({
   selector: 'app-articles',
@@ -8,7 +9,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 export class ArticlesComponent  implements OnInit {
 
 
-  
+  @Input() articles: Article[] = [];
 
   constructor() { }
 
