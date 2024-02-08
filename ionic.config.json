@@ -1,7 +1,5 @@
 {
-  "name": "news",
-  "integrations": {
-    "capacitor": {}
-  },
+  "name": "ionic-news",
+  "integrations": {},
   "type": "angular"
 }
